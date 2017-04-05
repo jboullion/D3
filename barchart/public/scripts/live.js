@@ -1,0 +1,1 @@
+var data=[4,8,15,16,23,42],chart=d3.select(".chart"),bar=chart.selectAll("div"),barUpdate=bar.data(data),barEnter=barUpdate.enter().append("div");barEnter.style("width",function(t){return console.log(t),10*t+"px"}),barEnter.text(function(t){return t});
